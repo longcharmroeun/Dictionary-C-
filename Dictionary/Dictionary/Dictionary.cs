@@ -81,7 +81,6 @@ namespace Dictionary
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Text = listBox1.SelectedIndex.ToString();
             if (listBox1.SelectedIndex >= 0 && listBox1.SelectedIndex < index)
             {
                 richTextBox1.Text = data.Dictionarys[listBox1.SelectedIndex].Definition;
@@ -165,11 +164,6 @@ namespace Dictionary
 
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text = null;
-            for (int i = 0; i < index; i++)
-            {
-                richTextBox1.Text += $"({i}  {data.Dictionarys[i].Definition})           ";
-            }
             FileStream fs = null;
             XmlSerializer xs = new XmlSerializer(typeof(Data));
 

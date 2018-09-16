@@ -225,6 +225,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.listBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Dictionary";
             this.Text = "Dictionary";
